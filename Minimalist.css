@@ -1,0 +1,770 @@
+@import url(http://mal-fellow-writer.appspot.com/anime/Middlepepper/?covers=.animetitle[href*="/&id/"]:after {background-image:url(&img);}); /*Covers Import*/
+
+@import url(http://fonts.googleapis.com/css?family=Handlee);
+
+* {
+  font-family: Handlee, Verdana, Geneva, sans-serif !important;
+  text-decoration: none !important;
+}
+
+body,
+body:after {
+  background: rgba(33, 33, 33, .6) url(https://i.imgur.com/c5hdiex.png) no-repeat fixed top right;
+  background-size: cover;
+  color: rgba(77, 222, 204, 1);
+  font-size: 13px;
+}
+
+body:after {
+  content: " ";
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(33, 33, 33, .92);
+  width: 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(77, 222, 204, 1);
+}
+
+::selection {
+  background-color: rgba(77, 222, 204, .5);
+  color: rgba(255, 254, 249, 1);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: rgba(77, 222, 204, .5);
+  color: rgba(255, 254, 249, 1);
+  text-shadow: none;
+}
+
+a,
+#copyright,
+#copyright:before,
+#mal_cs_pic {
+  color: rgba(255, 254, 249, 1) !important;
+  text-shadow: 10px 0px transparent, -10px 0px transparent;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+a:hover,
+#copyright:hover,
+#copyright:hover:before {
+  color: rgba(77, 222, 204, 1) !important;
+  text-shadow: 0px 0px rgba(77, 222, 204, 1), -0px 0px rgba(77, 222, 204, 1);
+}
+
+#btn-back_to_mobile {
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-left: 0 solid  rgba(77, 222, 204, 1) !important;
+  border-right: 5px solid  rgba(77, 222, 204, 1) !important;
+  bottom: 80px !important;
+  position: fixed !important;
+  right: 10px !important;
+  top: unset !important;
+}
+
+#btn-back_to_mobile:hover {
+  border-right-width: 10px !important;
+}
+
+#mal_control_strip {
+  background-color: rgba(33, 33, 33, .8) !important;
+  background-image: none !important;
+  height: 40px;
+  position: fixed;
+  z-index: 6;
+}
+
+#mal_control_strip td {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mal_control_strip *,
+#list_surround > table:first-of-type a,
+.header_title span,
+#copyright,
+#copyright:before,
+td:nth-of-type(n+1)[width="125"] small,
+input[value=Cancel],
+input[value=Save] {
+  font-family: Consolas, "Lucida Console", Monaco, monospace !important;
+}
+
+#mal_cs_pic {
+  background-color: rgba(33, 33, 33, .7);
+  width: 100px !important;
+}
+
+#mal_cs_pic img {
+  display: none;
+}
+
+#mal_cs_listinfo {
+  background-color: rgba(33, 33, 33, .7);
+  padding-left: 100px !important;
+  width: 120px !important;
+}
+
+#mal_cs_listinfo div {
+  padding-left: 10px;
+}
+
+#mal_cs_listinfo a:hover {
+  border-color: rgba(77, 222, 204, 1);
+  border-left: 5px solid;
+  padding-left: 5px;
+}
+
+#mal_cs_links {
+  width: 120px !important;
+}
+
+#mal_cs_links div,
+#mal_cs_links a,
+#mal_cs_pic a {
+  display: inline-block;
+  font-size: 0 !important;
+  height: 40px;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+#mal_cs_links div:last-of-type {
+  margin-left: 40px !important;
+  width: 80px;
+}
+
+#mal_cs_links a {
+  background-size: 20px !important;
+  display: block;
+}
+
+#mal_cs_links a:hover,
+#mal_cs_otherlinks div:last-of-type a:hover,
+#mal_cs_pic:hover {
+  background-color: rgba(77, 222, 204, .5) !important;
+}
+
+#mal_cs_links a[href="/addtolist.php?hidenav=1"] {
+  background: url(https://i.imgur.com/IxqsHFL.png) no-repeat center;
+}
+
+#mal_cs_links a[href="/"],
+#mal_cs_pic a[href="/"] {
+  background: url(https://i.imgur.com/yUEYRSe.png) no-repeat !important;
+  background-size: 100px !important;
+  left: 0;
+  position: fixed;
+  width: 100px;
+}
+
+#mal_cs_links a[href="/"]:hover {
+  background-color: rgba(77, 222, 204, .5) !important;
+}
+
+#mal_cs_links a[href*="/animelist/"] {
+  background: url(https://i.imgur.com/QsWimK8.png) no-repeat center;
+}
+
+#mal_cs_links a[href*="/mangalist/"] {
+  background: url(https://i.imgur.com/eIWWXDa.png) no-repeat center;
+  margin-left: 40px !important;
+}
+
+#mal_cs_otherlinks div {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin: 0 !important;
+}
+
+#mal_cs_otherlinks div:first-of-type {
+  color: rgba(255, 254, 249, 1);
+  font-size: 12px;
+  line-height: 40px;
+  overflow: hidden;
+  padding: 0px 10px 0px;
+  text-align: center;
+}
+
+#mal_cs_otherlinks div:first-of-type strong:before {
+  background: rgba(77, 222, 204, .5);
+  content: " ";
+  height: 40px;
+  margin-left: -20px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: -1;
+}
+
+#mal_cs_otherlinks div:first-of-type a {
+  background: transparent url(https://i.imgur.com/zNq0WMX.png) no-repeat center !important;
+  background-size: 0 !important;
+  font-size: 12px;
+}
+
+#mal_cs_otherlinks div:last-of-type {
+  font-size: 0;
+  width: 120px;
+}
+
+#mal_cs_otherlinks div:last-of-type a {
+  background-size: 20px !important;
+  display: block;
+  float: left;
+  font-size: 0;
+  height: 40px;
+  width: 40px;
+}
+
+#mal_cs_otherlinks div:last-of-type a:last-of-type {
+  margin-left: 80px !important;
+  position: absolute;
+  top: 0;
+}
+
+#mal_cs_otherlinks a[href*="/history/"] {
+  background: url(https://i.imgur.com/CgnuY7T.png) no-repeat center;
+}
+
+#mal_cs_otherlinks a[href="/forum/"] {
+  background: url(https://i.imgur.com/GT3KMR6.png) no-repeat center;
+}
+
+#mal_cs_otherlinks a[href="/panel.php?go=export"] {
+  background: url(https://i.imgur.com/O8ripMs.png) no-repeat center;
+}
+
+#mal_cs_otherlinks a[href*="/sharedanime.php?"],
+#mal_cs_otherlinks a[href*="/sharedmanga.php?"] {
+  background: url(https://i.imgur.com/tJWJlPN.png) no-repeat center;
+}
+
+#mal_cs_otherlinks a[href*="/animelist/"],
+#mal_cs_otherlinks a[href*="/mangalist/"] {
+  background: url(https://i.imgur.com/8i0ybAg.png) no-repeat center;
+}
+
+#mal_cs_otherlinks a[href="/login.php"] {
+  background: url(https://i.imgur.com/eLdp1Gz.png) no-repeat center;
+}
+
+#mal_cs_otherlinks a[href="/register.php"] {
+  background: url(https://i.imgur.com/khHp57D.png) no-repeat center;
+}
+
+#mal_cs_otherlinks a[href="/forum/?topicid=515949"] {
+  background: url(https://i.imgur.com/EPM4Fsm.png) no-repeat center;
+}
+
+span[title="Compatibility Score"] {
+  font-size: 15px;
+  line-height: 40px;
+  margin-left: 40px !important;
+  padding: 0px 10px 0px;
+  position: absolute;
+}
+
+#mal_cs_powered {
+  right: 0 !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: calc(100% - 820px);
+}
+
+#mal_cs_powered img {
+  display: none;
+}
+
+#search {
+  height: 40px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#searchBox {
+  background-color: transparent;
+  border: solid rgba(77, 222, 204, 1);
+  border-width: 0px 5px 0px 0px;
+  color: rgba(255, 254, 249, 1);
+  display: block;
+  font-size: 12px !important;
+  height: 20px;
+  letter-spacing: .1em;
+  text-align: right;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  padding-right: 10px;
+  position: fixed;
+  right: 10px;
+  top: 9px;
+  width: calc(100% - 850px) !important;
+}
+
+#searchBox:hover {
+  border-width: 0px 10px 0px 0px;
+  padding-right: 10px;
+}
+
+#list_surround {
+  left: 10px;
+  position: absolute;
+  top: 40px;
+  width: 60%;
+}
+
+br {
+  display: none;
+}
+
+#list_surround > table:first-of-type {
+  font-size: 15px;
+  height: calc(30px * 6);
+  position: fixed;
+  right: 10px;
+  top: 50px;
+  width: 170px;
+  z-index: 1;
+}
+
+#list_surround > table:first-of-type:after {
+  background: rgba(33, 33, 33, .8);
+  content: " ";
+  display: none;
+  height: calc(100% - 70px);
+  position: fixed;
+  right: 0;
+  top: 40px;
+  width: 80px;
+  z-index: -2;
+}
+
+#list_surround > table:first-of-type td {
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+
+#list_surround table:first-of-type td:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+#list_surround table:first-of-type td:nth-of-type(3) {
+  margin-top: calc(30px * 2);
+}
+
+#list_surround table:first-of-type td:nth-of-type(4) {
+  margin-top: calc(30px * 3);
+}
+
+#list_surround table:first-of-type td:nth-of-type(5) {
+  margin-top: calc(30px * 4);
+}
+
+#list_surround table:first-of-type td:nth-of-type(6) {
+  margin-top: calc(30px * 5);
+}
+
+.status_not_selected a,
+.status_selected a {
+  background-size: 0 !important;
+  border-color: rgba(77, 222, 204, 1) !important;
+  border-right: 5px solid;
+  display: block;
+  height: 100%;
+  padding-right: 10px;
+}
+/*Issue Must be in this table as it moves check postioning data*/
+.status_not_selected a:before,
+.status_selected a:before {
+  background: rgba(77, 222, 204, 1);
+  content: " ";
+  display: none;
+  height: 50px;
+  opacity: 0;
+  position: relative;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  width: 50px;
+  z-index: -1;
+}
+
+.status_not_selected a[href*="status=1"],
+.status_selected a[href*="status=1"] {
+  background: transparent url(https://i.imgur.com/ecFDvux.png) no-repeat center;
+}
+
+.status_not_selected a[href*="status=2"],
+.status_selected > a[href*="status=2"] {
+  background: transparent url(https://i.imgur.com/LKlj3Kv.png) no-repeat center;
+}
+
+.status_not_selected > a[href*="status=3"],
+.status_selected > a[href*="status=3"] {
+  background: transparent url(https://i.imgur.com/qNJmYml.png) no-repeat center;
+}
+
+.status_not_selected > a[href*="status=4"],
+.status_selected > a[href*="status=4"] {
+  background: transparent url(https://i.imgur.com/HE83QjF.png) no-repeat center;
+}
+
+.status_not_selected > a[href*="status=6"],
+.status_selected > a[href*="status=6"] {
+  background: transparent url(https://i.imgur.com/Cwspzi6.png) no-repeat center;
+}
+
+.status_not_selected > a[href*="status=7"],
+.status_selected > a[href*="status=7"] {
+  background: transparent url(https://i.imgur.com/st7q5x0.png) no-repeat center;
+}
+
+.status_not_selected a:hover,
+.status_selected a:hover {
+  border-right: 10px solid;
+}
+
+.status_selected a {
+  color: rgba(77, 222, 204, 1) !important;
+  border-right: 10px solid;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+.header_cw,
+.header_completed,
+.header_onhold,
+.header_dropped,
+.header_ptw {
+  background-color: rgba(77, 222, 204, .5);
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.header_title {
+  color: rgba(33, 33, 33, 1);
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 70px;
+  text-transform: uppercase;
+}
+
+.table_header {
+  background-color: rgba(33, 33, 33, .7);
+  line-height: 2.0em;
+  padding: 4px;
+}
+
+tr:hover [class^=td] {
+  background-color: rgba(33, 33, 33, .6);
+}
+
+.td1,
+.td2 {
+  line-height: 1.0em;
+  padding: 4px;
+}
+
+.td1 {
+  background-color: rgba(33, 33, 33, .5);
+}
+
+.td2 {
+  background-color: rgba(33, 33, 33, .4);
+}
+
+tr:hover [class^=td] a {
+  text-shadow: 0px 0px rgba(77, 222, 204, 1), -0px 0px rgba(77, 222, 204, 1);
+}
+
+.animetitle {
+  display: inline-block;
+  height: 1em;
+  max-width: calc(100% - 120px);
+  overflow: hidden;
+}
+
+.animetitle:after,
+.animetitle:before {
+  background-color: rgba(33, 33, 33, .8);
+  border-left-color: rgba(77, 222, 204, 1) !important;
+  border-right-color: rgba(77, 222, 204, 1) !important;
+  border-right-width: 0 !important;
+  border-style: solid !important;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+.animetitle:hover {
+  border-color: rgba(77, 222, 204, 1);
+  border-left: 5px solid;
+  padding-left: 5px;
+}
+
+.animetitle + small {
+  margin-left: 5px;
+  opacity: 1 !important;
+  position: absolute;
+  text-transform: lowercase;
+}
+
+.td1 small,
+.td2 small {
+  opacity: 0;
+}
+
+tr:hover td.td1 small,
+tr:hover td.td2 small {
+  opacity: 1;
+}
+
+td[class^=td][width="45"] input,
+td[class^=td][width="70"] input {
+  height: 1em;
+  margin: 0 -25px;
+  text-align: center;
+  width: 45px;
+}
+
+td[class^=td][width="70"] input {
+  width: 70px;
+}
+
+input[type="text"] {
+  border: 0;
+}
+
+input[value="Go"] {
+  display: none;
+}
+
+td:nth-of-type(n+1)[width="125"] {
+  padding: 0;
+  width: 0;
+}
+
+td:nth-of-type(n+1)[width="125"] strong,
+td:nth-of-type(n+1)[width="125"] b {
+  font-size: 0;
+}
+
+td:nth-of-type(n+1)[width="125"] small {
+  background-color: rgba(77, 222, 204, .5);
+  display: block;
+  font-size: 12px;
+  margin-top: -25px;
+  opacity: 0;
+  padding: 2px;
+  position: absolute;
+  right: -225px;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  visibility: hidden;
+  width: 70px;
+  z-index: 4;
+}
+
+td:nth-of-type(n+1)[width="125"] small:hover,
+input[value=Cancel]:hover,
+input[value=Save]:hover {
+  color: rgba(33, 33, 33, 1);
+}
+
+tr:hover td:nth-of-type(n+1)[width="125"] small {
+  opacity: 1;
+  right: -95px;
+  visibility: visible;
+}
+
+td:nth-of-type(n+1)[width="125"] small:after {
+  content: " tags";
+}
+
+.td1[width="125"] > span,
+.td2[width="125"] > span {
+  background-color: rgba(33, 33, 33, .8);
+  border-color: rgba(77, 222, 204, 1);
+  border-left: 5px solid;
+  height: 0;
+  left: 100%;
+  margin-left: 10px;
+  margin-top: -12px;
+  min-height: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  visibility: hidden;
+  width: 190px;
+}
+
+tr:hover .td1[width="125"] > span,
+tr:hover .td2[width="125"] > span {
+  height: auto;
+  min-height: 32px;
+  opacity: 1;
+  padding: 5px 10px;
+  visibility: visible;
+  z-index: 3;
+}
+
+tr:hover .td1[width="125"] > span:before,
+tr:hover .td2[width="125"] > span:before {
+  content: " ";
+  display: block;
+  height: 100%;
+  margin-top: -5px;
+  margin-left: -25px;
+  position: absolute;
+  width: 10px;
+}
+
+.td1[width="125"] a,
+.td2[width="125"] a {
+  font-size: 13px;
+  line-height: 16px;
+  overflow: hidden;
+}
+
+.inputtext {
+  background-color: rgba(33, 33, 33, .8);
+  border: 0;
+  color: rgba(255, 254, 249, 1);
+  height: 150px !important;
+  margin-top: -12px;
+  padding: 5px;
+  position: absolute;
+  right: -225px;
+  width: 205px !important;
+  z-index: 5;
+}
+
+input[value=Cancel],
+input[value=Save] {
+  background-color: rgba(77, 222, 204, .5);
+  border: 0;
+  color: rgba(255, 254, 249, 1);
+  cursor: pointer;
+  margin-top: calc(-12px + 155px);
+  position: absolute;
+  right: -210px;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  width: 70px;
+  z-index: 5;
+}
+
+input[value=Save] {
+  right: -135px;
+}
+
+.borderRBL {
+  color: rgba(77, 222, 204, 1);
+  padding-left: 50px;
+}
+
+.borderRBL br {
+  display: block !important;
+}
+
+.category_totals,
+#grand_totals {
+  background-color: rgba(33, 33, 33, .7);
+  color: rgba(77, 222, 204, 1);
+  line-height: 25px;
+  text-align: center;
+}
+
+#grand_totals {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+#copyright,
+#copyright:before {
+  border-color:rgba(77, 222, 204, 1) !important;
+  border-right: 5px solid;
+  color: rgba(255, 254, 249, 1);
+  height: 40px !important;
+  line-height: 20px;
+  padding-right: 5px;
+  position: fixed;
+  right: 10px;
+  text-align: right !important;
+  width: 350px !important;
+  z-index: 2;
+}
+
+#copyright {
+  bottom: 10px;
+}
+
+#copyright:hover,
+#copyright:hover:before {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+#copyright:hover {
+  color: rgba(255, 254, 249, 1) !important;
+  cursor: default;
+}
+
+#copyright:before {
+  bottom: 50px;
+  content: "Layout by Kiokuzoku";
+  font-size: 13px;
+  height: 20px !important;
+}
+
+#copyright:hover:before {
+  border-right: 10px solid;
+  color: rgba(77, 222, 204, 1);
+}
+
+#copyright:after {
+  background-color: rgba(33, 33, 33, .8);
+}
